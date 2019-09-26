@@ -202,6 +202,6 @@ class Lipreading(nn.Module):
                 m.bias.data.zero_()
 
 
-def lipreading(mode, inputDim=256, hiddenDim=512, nClasses=500, frameLen=29, every_frame=True):
+def lipreading(mode, inputDim=256, hiddenDim=512, nClasses=500, frameLen=10, every_frame=True):
     model = Lipreading(mode, inputDim=inputDim, hiddenDim=hiddenDim, nClasses=nClasses, frameLen=frameLen, every_frame=every_frame)
     return model
